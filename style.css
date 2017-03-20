@@ -1,0 +1,43 @@
+html {
+  font-size: 18px;
+}
+
+.header {
+  background-color: black;
+  color: white;
+}
+
+.header img {
+  height: 1.5rem;
+}
+
+.main {
+  background-image: url("images/moto.jpeg");
+  height: 500px;
+}
+
+.new {
+
+}
+
+nav {
+  background-color: red;
+}
+
+.topRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  height: 5rem;
+  background-color: black;
+  color: white;
+}
