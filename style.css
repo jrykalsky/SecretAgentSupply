@@ -3,41 +3,260 @@ html {
 }
 
 .header {
+  width: 100%;
+  height: 50px;
   background-color: black;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header img {
+.logo {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  width: 960px;
+}
+
+.header .logo img {
   height: 1.5rem;
+  padding-left: .5rem;
+  padding-right: 1rem;
+}
+
+.header .logo h1 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding-top: .66rem;
+  padding-bottom: .66rem;
 }
 
 .main {
   background-image: url("images/moto.jpeg");
-  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+    margin-top: 9rem;
+    margin-bottom: 7rem;
+    display: flex;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    width: 960px;
 }
 
 .new {
-
+  width: 25rem;
+  height: 9rem;
+  background-color: black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-nav {
-  background-color: red;
+.new h2 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: .25rem;
+  padding-left: 3rem;
+  color: white;
+}
+
+.new h1 {
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  color: white;
+}
+
+.nav {
+  width: 100%;
+  background-color: firebrick;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+}
+
+.content {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  display: flex;
+  justify-content: space-around;
+  width: 960px;
+}
+
+.content span {
+  color: white;
+}
+
+#menu {
+  display: none;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pen {
+  width: 30%;
+  height: 30%;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pen img {
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#pen {
+  height: 1.5rem;
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch {
+  width: 30%;
+  height: 30%;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.watch img {
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#watch {
+  height: 1.5rem;
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+}
+
+.glasses {
+  width: 30%;
+  height: 30%;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glasses img {
+  height: 9rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#glasses {
+  height: 1.5rem;
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  width: 35%;
+}
+
+.location h2 {
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.hours {
+  width: 35%;
+}
+
+.hours h2 {
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 .topRow {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 960px;
 }
 
 .bottomRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 4rem;
+  width: 960px;
 }
 
 .footer {
   height: 5rem;
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.footerText {
+  width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .pen, .watch {
+    width: 47%;
+  }
+  .glasses {
+    display: none;
+  }
+  .content span {
+    display: none;
+  }
+  #menu {
+    display: inline;
+  }
 }
